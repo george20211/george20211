@@ -1,7 +1,4 @@
 ﻿{% extends "base.html" %}
-{% block title %}
-    Страница записи 
-{% endblock %}
 {% block content %}
 {% load user_filters %}
 <main role="main" class="container">
@@ -32,7 +29,7 @@
                                             <div class="h6 text-muted">
                                                 <!-- Количество записей -->
                                                 {# т.к. мы должны вывести количество постов АВТОРА, то из него и будем доставать через related_name #}
-                                                Записей: {{author.posts.count}}
+                                                Записей: {{ counter }}
                                             </div>
                                     </li>
                             </ul>
